@@ -90,14 +90,12 @@ header {
     text-decoration: none;
     color: black;
 }
- 
-
 .jumbotron {
     margin-top: 3em;
     width: 100%;
 }
 
-/* MEDIA QUERIES - HEADER */
+/* MEDIA QUERIES - HEADER---------------------- */
 
 @media (max-width:800px){
 
@@ -123,9 +121,7 @@ header {
         font-size: 2.2rem;
         font-weight: bold;
     }
-
-
-}
+} 
 
 /* ----------------------------------------------  */
 
@@ -170,8 +166,7 @@ header {
     .top-content p {
         font-size: 2rem;
     }
-
-}
+} 
 /* -------------------------------- */
 
 
@@ -223,6 +218,7 @@ header {
     background-color: dodgerblue;
 }
 
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -254,7 +250,7 @@ header {
         font-size: 2.5rem;
     }
 
-}
+} 
 
 @media ( max-width:500px) {
 
@@ -273,10 +269,7 @@ header {
         color: white;
         font-size: 2.5rem;
     }
-
 }
-
-
 /* ------------------------------------ */
 
 .bottom-content {
@@ -335,6 +328,15 @@ footer nav a {
 
 /* MEDIA QUERIES "FOOTER" */
 
+ @media ( max-width: 800px) and (min-width: 500px) {
+    
+    footer nav a {
+        font-size: 2rem;
+        padding: .5em .5em;
+    }
+}
+
+
 @media ( max-width: 500px) {
     footer nav {
         flex-direction: column;
@@ -345,4 +347,4 @@ footer nav a {
         font-size: 2.5rem;
         padding: .5em 0;
     }
-}
+} 
