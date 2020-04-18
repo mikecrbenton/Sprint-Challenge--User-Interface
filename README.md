@@ -33,13 +33,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    -	HTML 5 introduced semantic tags – these tags ( such as header, footer, aside and section ) replace the generic <div>tags ( although these will still be used when needed) for naming major sections of your document.  These help developers understand code, and are improved for accessibility features
+
+
 2. What are the 4 areas of the box model?
+
+    -	These are :   content <  padding  <  border  <  margin 
+
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+   -	This works on the opposite axis ( cross ) of justify-content.  These being the main and cross axis.
+
+
 4. Explain why git is valuable to a team of developers.
 
+    - 	Git provides a record of changes with commits, allows work on different parts of code with branching, makes rolling back code possible, and helps a team work on the same code base concurrently.
+
+
 5. Define mobile-first design in your own words.
+
+    -	Mobile first is designing from small to large.  The developer would set up an initial mobile/smartphone design, then move upward to tablet and desktop ( as opposed to the traditional “desktop first” model ).
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
