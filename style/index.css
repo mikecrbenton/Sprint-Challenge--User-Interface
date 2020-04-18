@@ -66,7 +66,7 @@ p {
     line-height: 1.4;
 }
 
-/* ---------------HEADER--------------------- */
+/* ---------------HEADER--------------------- */  /****SPRINT*****/
 
 header {
     width: 800px;
@@ -82,6 +82,7 @@ header {
     width:600px;
     align-items: center;
     padding: 0 3em;
+    align-self: flex-end;
 }
 .nav-list li {
     padding: 0 2em;
@@ -90,12 +91,17 @@ header {
     text-decoration: none;
     color: black;
 }
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+}
 .jumbotron {
     margin-top: 3em;
     width: 100%;
 }
 
-/* MEDIA QUERIES - HEADER---------------------- */
+/* MEDIA QUERIES - HEADER */  /****SPRINT*****/
+/* ---------------------- */
 
 @media (max-width:800px){
 
@@ -123,10 +129,6 @@ header {
     }
 } 
 
-/* ----------------------------------------------  */
-
-
-
 .container {
     width: 800px;
     margin: 0 auto;
@@ -146,7 +148,8 @@ header {
     padding-bottom: 20px;  
 }
 
-/* MEDIA QUERIES "TOP CONTENT" */
+/* MEDIA QUERIES "TOP CONTENT" */  /****SPRINT*****/
+/* --------------------------- */
 
 @media (max-width: 800px){
     .top-content{
@@ -167,7 +170,7 @@ header {
         font-size: 2rem;
     }
 } 
-/* -------------------------------- */
+
 
 
 .middle-content {
@@ -186,7 +189,8 @@ header {
     justify-content: space-evenly;
 }
 
-/* ADDING COLOR TO BOXES */
+
+/* ADDING COLOR TO BOXES */  /****SPRINT*****/
 .boxes div:nth-child(1) {
     background-color: teal;
 }
@@ -230,7 +234,9 @@ header {
     justify-content: center;
 }
 
-/* MEDIA QUERIES "MIDDLE CONTENT" */
+
+/* MEDIA QUERIES "MIDDLE CONTENT" */  /****SPRINT*****/
+/* ------------------------------ */
 
 @media ( max-width:800px) {
 
@@ -251,7 +257,6 @@ header {
     }
 
 } 
-
 @media ( max-width:500px) {
 
     .middle-content h2 {
@@ -270,7 +275,8 @@ header {
         font-size: 2.5rem;
     }
 }
-/* ------------------------------------ */
+
+
 
 .bottom-content {
     display: flex;
@@ -286,8 +292,8 @@ header {
     padding-right: 0;
 }
 
-
-/* MEDIA QUERIES "BOTTOM CONTENT" */
+/* MEDIA QUERIES "BOTTOM CONTENT" */  /****SPRINT*****/
+/* ------------------------------ */
 
 @media (max-width: 800px) {
     
@@ -301,7 +307,8 @@ header {
         font-size: 2rem;
     }
 }
-/* ----------------------------------- */
+
+
 
 footer {
     width: 100%;
@@ -322,11 +329,8 @@ footer nav a {
     text-decoration: none;
 }
 
-.boxes:nth-of-type(3){
-    color: blue;
-}
-
-/* MEDIA QUERIES "FOOTER" */
+/* MEDIA QUERIES "FOOTER" */  /****SPRINT*****/
+/* ---------------------- */
 
  @media ( max-width: 800px) and (min-width: 500px) {
     
@@ -335,7 +339,6 @@ footer nav a {
         padding: .5em .5em;
     }
 }
-
 
 @media ( max-width: 500px) {
     footer nav {
