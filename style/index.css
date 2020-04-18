@@ -66,6 +66,69 @@ p {
     line-height: 1.4;
 }
 
+/* ---------------HEADER--------------------- */  /****SPRINT*****/
+
+header {
+    width: 800px;
+    margin: 0 auto;
+}
+.nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5em 0;
+}
+.nav-list {
+    display: flex;
+    width:600px;
+    align-items: center;
+    padding: 0 3em;
+    align-self: flex-end;
+}
+.nav-list li {
+    padding: 0 2em;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.jumbotron {
+    margin-top: 3em;
+    width: 100%;
+}
+
+/* MEDIA QUERIES - HEADER */  /****SPRINT*****/
+/* ---------------------- */
+
+@media (max-width:800px){
+
+    .nav-content{
+        flex-direction: column;
+
+    }
+    .lambda-img {
+        width:50%;
+        margin: 1em auto 5em;
+    }
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-list li {
+        border: 1px solid gray;
+        width: 80%;
+        border-radius: 10px;
+        padding: .2em 0;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+} 
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -85,6 +148,31 @@ p {
     padding-bottom: 20px;  
 }
 
+/* MEDIA QUERIES "TOP CONTENT" */  /****SPRINT*****/
+/* --------------------------- */
+
+@media (max-width: 800px){
+    .top-content{
+        flex-direction: column;
+
+    }
+    .top-content .text-container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+        
+    }
+    .top-content h2 {
+        font-size: 3rem;
+    }
+    .top-content p {
+        font-size: 2rem;
+    }
+} 
+
+
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -101,16 +189,94 @@ p {
     justify-content: space-evenly;
 }
 
+
+/* ADDING COLOR TO BOXES */  /****SPRINT*****/
+.boxes div:nth-child(1) {
+    background-color: teal;
+}
+.boxes div:nth-child(2) {
+    background-color: gold;
+}
+.boxes div:nth-child(3) {
+    background-color: cadetblue;
+}
+.boxes div:nth-child(4) {
+    background-color: coral;
+}
+.boxes div:nth-child(5) {
+    background-color: crimson;
+}
+.boxes div:nth-child(6) {
+    background-color: forestgreen;
+}
+.boxes div:nth-child(7) {
+    background-color: darkorchid;
+}
+.boxes div:nth-child(8) {
+    background-color: hotpink;
+}
+.boxes div:nth-child(9) {
+    background-color: indigo;
+}
+.boxes div:nth-child(10) {
+    background-color: dodgerblue;
+}
+
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+/* MEDIA QUERIES "MIDDLE CONTENT" */  /****SPRINT*****/
+/* ------------------------------ */
+
+@media ( max-width:800px) {
+
+    .middle-content h2 {
+        font-size: 3rem;
+    }
+    .middle-content .boxes {
+        
+        align-items: center;
+    }
+    .middle-content .boxes .box {
+        width: 40%;
+        height: 100%;
+        padding: 17% 0; 
+        margin: 20px auto;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+} 
+@media ( max-width:500px) {
+
+    .middle-content h2 {
+        font-size: 3rem;
+    }
+    .middle-content .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle-content .boxes .box {
+        width: 40%;
+        height: 100%;
+        padding: 17% 0; 
+        margin: 20px auto;
+        color: white;
+        font-size: 2.5rem;
+    }
+}
+
+
 
 .bottom-content {
     display: flex;
@@ -125,6 +291,24 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* MEDIA QUERIES "BOTTOM CONTENT" */  /****SPRINT*****/
+/* ------------------------------ */
+
+@media (max-width: 800px) {
+    
+    .bottom-content {
+        flex-direction: column;    
+    }
+    .text-container h2 {
+        font-size: 3rem;
+    }
+    .text-container p {
+        font-size: 2rem;
+    }
+}
+
+
 
 footer {
     width: 100%;
@@ -144,3 +328,26 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* MEDIA QUERIES "FOOTER" */  /****SPRINT*****/
+/* ---------------------- */
+
+ @media ( max-width: 800px) and (min-width: 500px) {
+    
+    footer nav a {
+        font-size: 2rem;
+        padding: .5em .5em;
+    }
+}
+
+@media ( max-width: 500px) {
+    footer nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    footer nav a {
+        font-size: 2.5rem;
+        padding: .5em 0;
+    }
+} 
